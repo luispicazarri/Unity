@@ -1,2 +1,0 @@
-# Unity
-Diseño de interacciones 

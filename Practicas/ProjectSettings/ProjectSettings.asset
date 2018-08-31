@@ -634,11 +634,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: e3124511-dd88-44db-9c4e-210607eb5e6e
-  projectName: 
+  projectName: Practicas
   organizationId: unity_-sue7wi7fm5pqa
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

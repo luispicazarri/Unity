@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Pauser : MonoBehaviour {
 	private bool paused = false;
 	public GameObject pausePanel;
+	public AudioSource music;
 	
 	// Update is called once per frame
 	void Update () {
@@ -36,8 +38,13 @@ public class Pauser : MonoBehaviour {
 		
 	}
 	
-	public void Mute()
+	public void Mute(Toggle value)
 	{
-		Debug.Log("Mute...");
+		if(value.isOn)
+		{
+			music.mute = true;
+		}else {
+			music.mute = false;
+		}
 	}
 }

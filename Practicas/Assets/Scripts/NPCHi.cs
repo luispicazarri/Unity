@@ -2,26 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactive : MonoBehaviour {
-	
-	public Color color;
-	
+public class NPCHi : MonoBehaviour {
+
 	private bool isPlayerInside = false; 
+	public GameObject infoPanel;
+	public GameObject SpeechPanel;
+	public AudioSource Sound;
+	public AudioSource Music;
 	
-	public GameObject infoPanel; 
-	
-	public int multiplier;
-	
-	private void Start(){
+	// Use this for initialization
+	void Start () {
 		infoPanel.SetActive(false);
+		SpeechPanel.SetActive(false);
 	}
 	
-	private void Update(){
-		
-		transform.Rotate(Vector3.up * Time.deltaTime * multiplier);
-		
+	// Update is called once per frame
+	void Update () {
 		if(Input.GetKeyDown(KeyCode.E) && isPlayerInside){
-			gameObject.GetComponent<Renderer>().material.color = color;
+			SpeechPanel.SetActive(true);
+			Sound.Play();
+			Music.Pause();
+			
 		}
 	}
 	
@@ -39,7 +40,12 @@ public class Interactive : MonoBehaviour {
 		if(other.CompareTag("Player")){
 			infoPanel.SetActive(false);
 			isPlayerInside = false;
+			if(SpeechPanel){
+				SpeechPanel.SetActive(false);
+				Music.Play();
+			}
 		}
+		
+		
 	}
-	
 }

@@ -53,7 +53,7 @@ namespace Kryz.CharacterStats.Examples
 		}
 
 		public bool RemoveItem(Item item)
-		{
+		{				
 			if (items.Remove(item))
 			{
 				RefreshUI();

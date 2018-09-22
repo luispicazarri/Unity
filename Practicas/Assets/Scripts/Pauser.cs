@@ -47,4 +47,16 @@ public class Pauser : MonoBehaviour {
 			music.mute = false;
 		}
 	}
+	
+	public void bPressed()
+	{
+		Debug.Log("si llego we tu codigo esta mal");
+		paused = !paused;	
+		pausePanel.SetActive(paused);
+		
+		if(paused)
+			Time.timeScale = 0;
+		else
+			Time.timeScale = 1;
+	}
 }

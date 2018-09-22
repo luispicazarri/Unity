@@ -28,4 +28,17 @@ public class StatsPause : MonoBehaviour {
 			Time.timeScale = 1;
 		}
 	}
+	
+	public void yButton(){
+		paused = !paused;	
+		pausePanel.SetActive(paused);
+		HUDPanel.SetActive(!paused);
+		
+		if(paused)
+		Time.timeScale = 0;
+		else
+		Time.timeScale = 1;
+	
+	}
+	
 }

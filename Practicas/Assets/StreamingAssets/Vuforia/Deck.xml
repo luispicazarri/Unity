@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="vomit" size="0.060000 0.083843" />
+    <ImageTarget name="shh" size="0.060000 0.081471" />
+    <ImageTarget name="piss" size="0.060000 0.084334" />
+    <ImageTarget name="mmmmm" size="0.060000 0.083117" />
+    <ImageTarget name="loveYou" size="0.060000 0.082997" />
+    <ImageTarget name="johnCena" size="0.060000 0.083478" />
+  </Tracking>
+</QCARConfig>

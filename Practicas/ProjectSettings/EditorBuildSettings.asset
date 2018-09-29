@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Practica 2.unity
     guid: ea7ee7c5d8a2774418c3a9b95757ed2b
   m_configObjects: {}

@@ -6,7 +6,7 @@ namespace Kryz.CharacterStats.Examples
 {
 	public class Inventory : MonoBehaviour
 	{
-		[SerializeField] List<Item> items;
+		public List<Item> items;
 		[SerializeField] Transform itemsParent;
 		[SerializeField] ItemSlot[] itemSlots;
 
